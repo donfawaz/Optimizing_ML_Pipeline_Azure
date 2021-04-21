@@ -21,7 +21,7 @@ Then we create a HyperDrive config passing to it a Sklearn estimator, paramter s
 The paramter we are using is the inverse regularization parameter and max_iteration is the maximum number of iterations C and max_iter respectively.
 For better efficiency we used a Early Stopping policy in HyperDrive config to terminate poorly performing runs.
 I chose a BanditPolicy which is based on slack factor or slack amount and evaluation interval.
-slack factor or slack amount will determine weather a primary metric run will terminate because its not within the specified slack factor or slack amount
+slack factor or slack amount will determine weather a primary metric run will terminate because its not within the specified slack factor or slack amount.
 Finally, we noted the best run and model from the HyperDrive run
 
 # AutoML
