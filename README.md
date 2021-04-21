@@ -18,7 +18,7 @@ some preprocessing steps such as converting categorical variable, onehot encodin
 After cleaning we split the dataset into train, test data.
 Next we difine a Logistic Regression model for training.
 Then we create a HyperDrive config passing to it a Sklearn estimator, paramter sampling and some other paramters.
-The paramter we are using is the inverse regularization parameter and max_iter is the maximum number of iterations C and max_iter respectively.
+The paramter we are using is the inverse regularization parameter and max_iteration is the maximum number of iterations C and max_iter respectively.
 For better efficiency we used a Early Stopping policy in HyperDrive config to terminate poorly performing runs.
 I chose a BanditPolicy which is based on slack factor or slack amount and evaluation interval.
 slack factor or slack amount will determine weather a primary metric run will terminate because its not within the specified slack factor or slack amount
